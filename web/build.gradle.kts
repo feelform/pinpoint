@@ -1,6 +1,6 @@
 plugins {
     id("com.navercorp.pinpoint.java11-library")
-    id("org.siouan.frontend-jdk8") version "6.0.0"
+    id("org.siouan.frontend-jdk11") version "6.0.0"
 }
 
 dependencies {
@@ -18,11 +18,10 @@ dependencies {
     implementation(platform(project(":pinpoint-plugins")))
     implementation(platform(project(":pinpoint-agent-plugins")))
 
-    implementation(libs.guava.jdk8)
+    implementation(libs.guava)
     implementation(libs.netty)
     implementation(libs.zookeeper)
     implementation(libs.commons.lang3)
-    implementation("org.apache.commons:commons-text:1.9")
     implementation(libs.commons.collections4)
     implementation(libs.libthrift) {
         exclude(group = "org.apache.httpcomponents", module = "httpclient")
