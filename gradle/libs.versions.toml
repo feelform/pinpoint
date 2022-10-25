@@ -16,6 +16,7 @@ jaxbImpl = "2.3.3"
 tinylog = "2.2.1"
 jacksonASL = "1.9.13"
 mysql-connector-java="8.0.28"
+testcontainers="1.17.2"
 
 [libraries]
 spring-core = { module = "org.springframework:spring-core", version.ref = "spring" }
@@ -174,7 +175,6 @@ curator-framework = { module = "org.apache.curator:curator-framework", version =
 curator-test = { module = "org.apache.curator:curator-test", version = "2.13.0" }
 
 libthrift = { module = "org.apache.thrift:libthrift", version = "0.16.0" }
-libthrift-v016 = { module = "org.apache.thrift:libthrift", version = "0.16.0" }
 
 guava = { module = "com.google.guava:guava", version = "31.1-jre" }
 guava-cassandra = { module = "com.google.guava:guava", version = "14.0.1" }
@@ -200,6 +200,16 @@ tinylog-slf4j = { module = "org.tinylog:slf4j-tinylog", version.ref = "tinylog" 
 nanohttpd = { module = "org.nanohttpd:nanohttpd", version = "2.3.1" }
 
 maven-resolver-api = { module = "org.apache.maven.resolver:maven-resolver-api", version = "1.6.1" }
+
+testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
+testcontainers-jdbc = { module = "org.testcontainers:jdbc", version.ref = "testcontainers" }
+testcontainers-mysql = { module = "org.testcontainers:mysql", version.ref = "testcontainers" }
+testcontainers-mariadb = { module = "org.testcontainers:mariadb", version.ref = "testcontainers" }
+testcontainers-mssqlserver = { module = "org.testcontainers:mssqlserver", version.ref = "testcontainers" }
+testcontainers-oraclexe = { module = "org.testcontainers:oracle-xe", version.ref = "testcontainers" }
+testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
+testcontainers-cassandra = { module = "org.testcontainers:cassandra", version.ref = "testcontainers" }
+
 
 [bundles]
 asm = ["asm-core", "asm-commons", "asm-util", "asm-tree", "asm-analysis"]
