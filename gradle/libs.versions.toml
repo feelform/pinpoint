@@ -109,6 +109,7 @@ mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring
 mysql-connector-java = { module = "mysql:mysql-connector-java", version.ref = "mysql-connector-java" }
 
 netty = { module = "io.netty:netty", version = "3.10.6.Final" }
+
 netty-bom = { module = "io.netty:netty-bom", version.ref = "netty4" }
 netty-all = { module = "io.netty:netty-all", version.ref = "netty4" }
 netty-buffer = { module = "io.netty:netty-buffer", version.ref = "netty4" }
@@ -177,7 +178,6 @@ curator-test = { module = "org.apache.curator:curator-test", version = "2.13.0" 
 libthrift = { module = "org.apache.thrift:libthrift", version = "0.16.0" }
 
 guava = { module = "com.google.guava:guava", version = "31.1-jre" }
-guava-cassandra = { module = "com.google.guava:guava", version = "14.0.1" }
 guice = { module = "com.google.inject:guice", version = "4.2.2" }
 
 grpc-core = { module = "io.grpc:grpc-core", version.ref = "grpc" }
@@ -213,6 +213,7 @@ testcontainers-cassandra = { module = "org.testcontainers:cassandra", version.re
 
 [bundles]
 asm = ["asm-core", "asm-commons", "asm-util", "asm-tree", "asm-analysis"]
+grpc = ["grpc-core", "grpc-netty", "grpc-stub", "grpc-protobuf", "protobuf-java"]
 
 [plugins]
 protobuf = { id = "com.google.protobuf", version = "0.8.19" }
