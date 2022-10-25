@@ -1,6 +1,6 @@
 plugins {
     id("com.navercorp.pinpoint.java11-library")
-    id("org.siouan.frontend-jdk11") version "6.0.0"
+    id("org.siouan.frontend-jdk8") version "6.0.0"
 }
 
 dependencies {
