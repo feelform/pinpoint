@@ -53,7 +53,11 @@ dependencies {
     implementation(libs.netty.codec.http2)
     implementation(libs.grpc.stub)
     implementation(libs.grpc.protobuf)
-    implementation(libs.jackson.core.asl)
+
+    implementation(libs.jackson.core)
+    implementation(libs.jackson.annotations)
+    implementation(libs.jackson.databind)
+
     implementation(libs.jackson.annotations)
     implementation(libs.commons.math3)
 }
