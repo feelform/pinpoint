@@ -84,7 +84,7 @@ jackson1-mapper = { module = "org.codehaus.jackson:jackson-mapper-asl", version.
 snakeyaml = { module = "org.yaml:snakeyaml", version = "1.33" }
 
 hbase-shaded-client = { module = "org.apache.hbase:hbase-shaded-client", version = "1.7.2" }
-hbase-client = { module = "org.apache.hbase:hbase-client", version = "2.4.11" }
+hbase2-client = { module = "org.apache.hbase:hbase-client", version = "2.4.11" }
 
 springdoc-openapi-ui = { module = "org.springdoc:springdoc-openapi-ui", version = "1.4.4" }
 
