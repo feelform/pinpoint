@@ -79,7 +79,7 @@ jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", ver
 jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "fastxml-jackson" }
 snakeyaml = { module = "org.yaml:snakeyaml", version = "1.33" }
 
-hbase-shaded-client = { module = "org.apache.hbase:hbase-shaded-client", version = "1.7.1" }
+hbase-shaded-client = { module = "org.apache.hbase:hbase-shaded-client", version = "1.7.2" }
 hbase-client = { module = "org.apache.hbase:hbase-client", version = "2.4.11" }
 
 springdoc-openapi-ui = { module = "org.springdoc:springdoc-openapi-ui", version = "1.4.4" }
