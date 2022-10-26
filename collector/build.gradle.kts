@@ -19,7 +19,7 @@ dependencies {
 
     implementation(libs.zookeeper)
     implementation(libs.guava)
-    implementation(libs.netty)
+    implementation(libs.netty3)
     implementation(libs.commons.lang3)
     implementation(libs.commons.collections4)
     implementation(libs.libthrift) {

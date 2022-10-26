@@ -23,7 +23,7 @@ dependencies {
     implementation(libs.log4j.core)
     implementation(libs.protobuf.java)
     implementation(libs.grpc.stub)
-    implementation(libs.netty)
+    implementation(libs.netty3)
     implementation(libs.netty.common)
     implementation(libs.caffeine)
     implementation(libs.grpc.core) {

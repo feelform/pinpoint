@@ -6,7 +6,8 @@ springBatch = "4.3.3"
 springBoot = "2.5.12"
 springSecurity = "5.5.3"
 metrics = "3.2.6"
-fastxml-jackson = "2.13.4"
+jackson = "2.13.4"
+jackson1 = "1.9.13"
 log4j2 = "2.17.2"
 netty4 = "4.1.77.Final"
 asm = "9.2"
@@ -14,7 +15,6 @@ grpc = "1.49.2"
 protoc = "3.21.7"
 jaxbImpl = "2.3.3"
 tinylog = "2.2.1"
-jacksonASL = "1.9.13"
 mysql-connector-java="8.0.28"
 testcontainers="1.17.2"
 
@@ -73,10 +73,14 @@ metrics-core = { module = "io.dropwizard.metrics:metrics-core", version.ref = "m
 metrics-jvm = { module = "io.dropwizard.metrics:metrics-jvm", version.ref = "metrics" }
 metrics-servlets = { module = "io.dropwizard.metrics:metrics-servlets", version.ref = "metrics" }
 
-jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "fastxml-jackson" }
-jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "fastxml-jackson" }
-jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "fastxml-jackson" }
-jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "fastxml-jackson" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "jackson" }
+
+jackson1-core = { module = "org.codehaus.jackson:jackson-core-asl", version.ref = "jackson1" }
+jackson1-mapper = { module = "org.codehaus.jackson:jackson-mapper-asl", version.ref = "jackson1" }
+
 snakeyaml = { module = "org.yaml:snakeyaml", version = "1.33" }
 
 hbase-shaded-client = { module = "org.apache.hbase:hbase-shaded-client", version = "1.7.2" }
@@ -84,8 +88,6 @@ hbase-client = { module = "org.apache.hbase:hbase-client", version = "2.4.11" }
 
 springdoc-openapi-ui = { module = "org.springdoc:springdoc-openapi-ui", version = "1.4.4" }
 
-jackson-core-asl = { module = "org.codehaus.jackson:jackson-core-asl", version.ref = "jacksonASL" }
-jackson-mapper-asl = { module = "org.codehaus.jackson:jackson-mapper-asl", version.ref = "jacksonASL" }
 hbasewd = { module = "com.sematext.hbasewd:hbasewd", version = "0.1.0" }
 
 # Logging dependencies
@@ -108,7 +110,7 @@ mybatis-spring = { module = "org.mybatis:mybatis-spring", version = "2.0.6" }
 mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version = "2.1.4" }
 mysql-connector-java = { module = "mysql:mysql-connector-java", version.ref = "mysql-connector-java" }
 
-netty = { module = "io.netty:netty", version = "3.10.6.Final" }
+netty3 = { module = "io.netty:netty", version = "3.10.6.Final" }
 
 netty-bom = { module = "io.netty:netty-bom", version.ref = "netty4" }
 netty-all = { module = "io.netty:netty-all", version.ref = "netty4" }
