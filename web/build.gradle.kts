@@ -101,9 +101,9 @@ dependencies {
 
 description = "pinpoint-web"
 
-//frontend {
-//    nodeVersion.set("14.18.1")
-//    assembleScript.set("run build:real")
-//    cleanScript.set("run clean")
-//    checkScript.set("run check")
-//}
+frontend {
+    nodeVersion.set("14.18.1")
+    packageJsonDirectory.set(file("src/main/angular"))
+    installScript.set("install")
+    assembleScript.set("run build:real")
+}
