@@ -36,6 +36,7 @@ public class IdValidateUtilsTest {
 
 
         Assertions.assertFalse(IdValidateUtils.validateId("한글")); // test with parameter written in Korean.
+        Assertions.assertFalse(IdValidateUtils.validateId("abc def"));
     }
 
     @Test
